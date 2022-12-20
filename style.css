@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(35, 36, 41);
+    font: normal 18px arial;
+}
+
+header{
+    color:white;
+    text-align: center;
+}
+
+section{
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 330px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input#numero{
+    font: normal 18px Arial;
+    color: aliceblue;
+    width: 60px;
+    height: 27px;
+    background-color: #2e2f30;
+    border: 2px solid rgb(10, 10, 10);
+    transition: width 0.4s ease-in-out;
+    position: relative;
+}
+input#numero:focus{
+    width: 20%;
+}
+
+input#butao2{
+    top: 1rem;
+}
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: url(../images/select-angle-down.png) no-repeat center right #FFF;
+    font-size: 15px;
+    padding-right: 20px;
+    font: normal 18px Arial;
+    color: aliceblue;
+    background-color: #2e2f30;
+    border: 2px solid rgb(10, 10, 10);
+    transition: width 0.4s ease-in-out;
+    position: relative;
+}
+input#butao1{
+    bottom: 0.2rem;
+}
+
+input[type=button] {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #2e2f30;
+    border: 3px solid rgb(10, 10, 10);
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.05s;
+    padding: 10px;
+}
+  
+input[type=button]:active {
+    background-color: #646668;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+div#res{
+    position: relative;
+    top: 2rem;
+    text-align: left;
+}
+  
+footer{
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
