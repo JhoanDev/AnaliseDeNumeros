@@ -102,7 +102,7 @@ footer{
     text-align: center;
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 650px) {
     body{
         font: normal 13px arial;
     }
@@ -140,18 +140,14 @@ footer{
         position: relative;
     }
     input#numero:focus{
-        width: 17%;
+        width: 14%;
     }
     
     input#butao2{
         top: 1rem;
     }
     select{
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
         text-indent: 1px;
-        background: url(../images/select-angle-down.png) no-repeat center right #FFF;
         font: normal 12px Arial;
         color: rgb(255, 255, 255);
         background-color: #2e2f30;
@@ -167,9 +163,9 @@ footer{
     input[type=button] {
         position: relative;
         display: inline-block;
-        height: 4.5em;
-        width: 7em;
-        font-size: 8px;
+        height: 5em;
+        width: 7.5em;
+        font-size: 0.5em;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
