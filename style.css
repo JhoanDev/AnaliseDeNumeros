@@ -151,7 +151,6 @@ footer{
         -webkit-appearance: none;
         -moz-appearance: none;
         text-indent: 1px;
-        text-overflow: '';
         background: url(../images/select-angle-down.png) no-repeat center right #FFF;
         font: normal 12px Arial;
         color: rgb(255, 255, 255);
@@ -170,7 +169,7 @@ footer{
         display: inline-block;
         height: 4.5em;
         width: 7em;
-        font-size: 9px;
+        font-size: 8px;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
