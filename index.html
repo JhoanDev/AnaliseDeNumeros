@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de números</title>
+    <title>Análise de números</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Analisador de números</h1>
+        <h1>Análise de números</h1>
     </header>
-    <section>
-        <div>
-            Insira um número de 1 a 100: <input type="number" name="1a100" id="numero"  onfocus="this.value='';"> <input type="button" id="butao1" value="enviar"  onclick="enviar()"> 
-        </div>
-        <div id="div2">
-            <select name="analisador" id="analisador" size="5">
-            
-            </select>
-        </div>
-        <div>
-            <input type="button" id="butao2" value="Analisar" onclick="analisar()">
-        </div>
-        <div id="res">
+    <div class="box">
+        <div class="span">
+            <section class="conteiner">
+                <div class="analise">
+                    <p class="text">Insira um número de -10000 a 10000</p>
+                    <input type="number" name="number" id="number" class="number"> <input type="button" value="Submit" class="button" id="submit" onclick="enviar()"> <input type="button" value="analisar" class="button" id="analisar" onclick="analisar()">
+                </div>
+                <div class="add">
+                    <select name="Numeros add" id="selected" size="5">
 
+                    </select>
+                </div>
+                <div class="res" >
+                    <div class="texto" id="res"></div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
     <footer>
         <P>&copy; JhoanDev</P>
     </footer>

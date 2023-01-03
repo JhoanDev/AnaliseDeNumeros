@@ -1,11 +1,10 @@
-var div = document.getElementById('teste')
 let vetor = []
 var qnt = 0
 
 function enviar() {
-    var num = Number(document.getElementById('numero').value)
-    var table = document.getElementById('analisador')
-    if (num >= 1 && num <= 100) {
+    var num = Number(document.getElementById('number').value)
+    var table = document.getElementById('selected')
+    if (num >= -10000 && num <= 10000) {
         vetor.push(num)
         qnt++
         let item = document.createElement('option')
@@ -22,7 +21,7 @@ function analisar() {
     }else{
     var maior = 1
     var soma = 0
-    var menor = 100
+    var menor = 10000
         for (let i = 0; i < vetor.length; i++) {
             if (vetor[i] > maior ) {
                 maior = vetor[i]
@@ -33,6 +32,6 @@ function analisar() {
             soma += vetor[i]
         }
     var media = soma/qnt
-    res.innerHTML = `Ao todo, temos <b>${qnt}</b> números cadastrados <br>O maior valor informado foi: <b>${maior}</b> <br>O menor valor informado foi: <b>${menor}</b> <br>A soma de todos os valores é: <b>${soma}</b> <br> A média de todos os valores é: <b>${media}</b>`
+    res.innerHTML = `temos <b>${qnt}</b> números cadastrados <br>O maior valor informado foi: <b>${maior}</b> <br>O menor valor informado foi: <b>${menor}</b> <br>A soma de todos os valores é: <b>${soma}</b> <br> A média de todos os valores é: <b>${media}</b>`
     }
 }
